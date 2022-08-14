@@ -65,11 +65,11 @@ const processSubscribersList = () => {
             return updateSubscribers(sub4);
         })
         .then(updatedSub4 => {
-            console.log('\n Value passed to then block #3', updatedSub4);
+            console.log('\n Value passed to then block #4', updatedSub4);
             return updateSubscribers(sub5);
         })
         .then(updatedSub5 => {
-            console.log('\n Value passed to then block #3', updatedSub5);
+            console.log('\n Value passed to then block #5', updatedSub5);
             // trigger rejection. Any block after this one will not be executed
             return updateSubscribers(invalidUser);
         })
