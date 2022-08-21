@@ -94,6 +94,12 @@ app.post('/create', (req, res) => {
     res.redirect('/');
 });
 
+//DELETE
+app.get('/delete/:key', (req, res) => {
+    delete projectsDatabase[req.params.key];
+    res.redirect('/');
+});
+
 // EVENT LISTENER
 app.listen(PORT, () => {
     console.log('Server is running on port ', PORT);
