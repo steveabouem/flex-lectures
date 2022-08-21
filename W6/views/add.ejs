@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h2>Welcome to the project creation page</h2>
+        <p>There are currently <%= projectsCount %>
+        </p>
+        <!-- A form will send a response object, for which the keys are the input names,
+        the method and route being the form method and form action respectively -->
+        <form method="post" action="/create" id="project-form">
+            <label for="projectKey">Project Key</label><input type="text" name="projectKey">
+            <br>
+
+            <label for="name">Name</label><input type="text" name="name">
+            <br>
+
+            <label for="description">Description</label><input type="text" name="description">
+            <br>
+
+            <label for="stack">Stack</label>
+            <br>
+
+            <small>Hold ctrl key to select multiple</small>
+            <br>
+
+            <select name="stack" form="project-form" multiple>
+                <option value="JS">JS</option>
+                <option value="Express">Express</option>
+                <option value="HTML/CSS">HTML/CSS</option>
+                <option value="SQL">SQL</option>
+                <option value="SQL">SQL</option>
+                <option value="JQuery">JQuery</option>
+            </select>
+            <br>
+
+            <label>Submit</label><input type="submit">
+        </form>
+    </div>
+</body>
+
+</html>

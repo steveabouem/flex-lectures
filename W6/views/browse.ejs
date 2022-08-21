@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- VARIBALE VALUE INJECTION -->
+    <%= browseVariable %>
+
+        <h1>Welcome! Here are your current projects</h1>
+
+        <!-- LOGIC INJECTION -->
+        <% for (let p in projectsDatabase) {%>
+            <h3>
+                <%= p %>
+            </h3>
+            <ul>
+                <li>
+                    Name: <%= projectsDatabase[p].name %>
+                </li>
+
+                <li>
+                    Description: <%= projectsDatabase[p].description %>
+                </li>
+
+                <li>
+                    Stack:
+                    <% for(let i=0; i < projectsDatabase[p].stack.length; i ++) {%>
+                        <%= projectsDatabase[p].stack[i] %>
+                            <%}%>
+                </li>
+            </ul>
+            <% } %>
+</body>
+
+</html>

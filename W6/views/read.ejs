@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+</head>
+
+<body>
+    <h1>Current Project</h1>
+
+    <h3>
+        <%= project.name %>
+    </h3>
+    <p>
+        Description: <%= project.description %>
+    </p>
+
+    <p>
+        Stack:
+        <% for(let i=0; i < project.stack.length; i ++) {%>
+            <%= project.stack[i] %>
+                <%}%>
+    </p>
+
+</body>
+
+</html>
