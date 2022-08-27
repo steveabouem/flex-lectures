@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>Register</title>
+</head>
+<body>
+  <%- include('_header') %>
+  
+  <h2>Login</h2>
+
+  <form action="/users/login?_method=DELETE" method="POST">
+    <label for="username">Username</label>
+    <input name="username" type="text" id="username"/>
+
+    <label for="password">Password</label>
+    <input name="password" type="text" id="password"/>
+
+    <input name="submit" type="submit" value="Login" id="submit"/>
+  </form>
+</body>
+</html>
