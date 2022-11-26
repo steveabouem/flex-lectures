@@ -1,0 +1,104 @@
+.App {
+  margin: 1em;
+  text-align: center;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+h4 {
+  padding: 0px;
+  margin: 0.2em;
+}
+
+h4:empty:before {
+  content: "\200b"; /* unicode zero width space character */
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: auto;
+  width: 16em;
+}
+
+li {
+  padding: 5px;
+  margin: 2px;
+  background-color: #eee;
+  text-align: left;
+}
+
+li a {
+  color: grey;
+}
+
+li:hover {
+  background-color: darkolivegreen;
+  color: white;
+  cursor: pointer;
+}
+
+li:hover a {
+  color: white;
+}
+
+span {
+  color: red;
+}
+
+button { 
+  padding: 4px;
+  margin: 4px 2px 4px 2px;
+}
+
+input {
+  margin: 0 10px;
+}
+
+#users {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+  margin: auto;
+}
+
+.user-info {
+  height: 250px;
+  position: relative;
+  width: 300px;
+  border: 0.5px solid #5c6262;
+  background: rgb(255, 157, 96);
+  color: rgb(108, 77, 77);
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.user-info .top {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 1.5em;
+  align-items: center;
+}
+.user-info img {
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  background: white;
+}
+
+.remove {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: black;
+  height: 20px;
+  width: 20px;
+  border-radius: 40px;
+  color: white;
+  font-weight: bold;
+}
