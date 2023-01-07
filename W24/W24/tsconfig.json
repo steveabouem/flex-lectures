@@ -1,0 +1,7 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "lib": ["ES2016", "DOM"]
+    },
+    "include": ["src"],
+}
