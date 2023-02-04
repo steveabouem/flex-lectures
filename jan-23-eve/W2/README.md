@@ -9,11 +9,12 @@
 
 
 ### *GIT*
- 1. Check the current changes not yet pushed, sent to the remote repository
+[screeshot]
+ 1. Check the [current changes](https://git-scm.com/docs/git-status) not yet pushed, sent to the remote repository
  ```
  git status
  ```
- 2. Add files you intend to push to the remote
+ 2. [Add](https://git-scm.com/docs/git-add) files you intend to push to the remote
  ```
  git add name_of_file
  OR 
@@ -21,12 +22,12 @@
  
  ```
 
- 3. Create a commit, with a meaningful message
+ 3. Create a [commit](https://git-scm.com/docs/git-commit), with a meaningful message
  ```
  git commit -m"description of task"
  
  ```
-4. Push local changes to remote
+4. [Push](https://git-scm.com/docs/git-push) local changes to remote
  ```
  git push
  ```
