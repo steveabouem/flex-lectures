@@ -6,9 +6,9 @@ const anonymousGreetings = function(name) { // name here is a PARAMETER
 }
 
 function namedGreetings(name) {
-    console.log('named HI');
+    console.log('named HI', name);
 }
 
 
 anonymousGreetings('JAMES'); // JAMES is the ARGUMENT for the name PARAMETER
-// namedGreetings();
+namedGreetings('Jack');

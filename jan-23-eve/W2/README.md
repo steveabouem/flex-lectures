@@ -9,7 +9,9 @@
 
 
 ### *GIT*
-[screeshot]
+#### Overview of branching:
+![screenshot](./Screenshot%202023-02-04%20124136.png)
+#### Steps
  1. Check the [current changes](https://git-scm.com/docs/git-status) not yet pushed, sent to the remote repository
  ```
  git status
