@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <h2>Current pet list(<%= total %>) </h2>
+    <a href="/newPet">Create a pet file</a>
+    <%  for(const pet of pets) { %>
+        <div>
+            <h4><%= pet.name %></h4>
+            <a href="/petDetails/<%=pet.id%>">View file</a>
+            <ul>
+                <li>Age <%= pet.age %></li>
+                <li>Breed <%= pet.breed %></li>
+            </ul>
+            <a href="/editPet/<%=pet.id%>">Edit</a>
+            <a href="/adoptPet/<%=pet.id%>">Adopt</a>
+        </div>
+    <% }%>
+</body>
+<scriptsrc="pathtojs"></script>
+</html>
