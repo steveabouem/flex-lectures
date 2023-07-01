@@ -1,0 +1,16 @@
+{
+  "name": "typsecript-intro",
+  "version": "1.0.0",
+  "description": "### To Do [Slides](https://docs.google.com/presentation/d/1ONuRHHwxIdxCYfnzxPxmLyjd6QV-S_deV3A2bTJkreU/edit?usp=sharing)",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc --watch --preserveWatchOutput"
+  },
+  "author": "",
+  "license": "ISC"
+}
